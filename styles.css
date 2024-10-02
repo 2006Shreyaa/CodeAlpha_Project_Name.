@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(210, 60%, 95%);
+}
+/* Interest Modal */
+.modal-interest {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content-interest {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .modal-content-interest h2 {
+    font-size: 1.8rem;
+  }
+  
+  .modal-content-interest p {
+    margin-bottom: 20px;
+  }
+  
+  .modal-content-interest label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content-interest input {
+    margin-right: 10px;
+  }
+  
+  .modal-content-interest button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(14, 49, 1);
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Modal Styling */
+.interest-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .cancel-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  
+.cancel-btn:hover {
+    color: red;
+}
+  
+.modal-content-interest button:hover {
+background-color: rgb(10, 40, 0);
+}
+  
+header {
+    background-color: rgb(14, 49, 1);
+    color: white;
+    padding: 10px 0;
+}
+
+.logo {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gallery-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 5px;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-size: 30px;
+    padding: 16px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.contact-section, .join-section {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(14, 49, 1);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(10, 40, 0);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(14, 49, 1);
+    color: white;
+}
+.load-more-btn {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(14, 49, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .load-more-btn:hover {
+    background-color: rgb(10, 40, 0);
+  }
+  

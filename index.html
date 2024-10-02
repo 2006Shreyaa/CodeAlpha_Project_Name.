@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">MYGALLERY</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <!-- Link to the home page -->
+          <li><a href="about.html">About Us</a></li>
+          <!-- Link to the new About Us page -->
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#join">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="gallery-container">
+      <h2>Welcome to the Photo Gallery</h2>
+      <div class="thumbnails">
+        <img
+          src="pexels-cottonbro-6555017.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="openModal(0)"
+        />
+        <img
+          src="pexels-mirsad-mujanovic-215929-691031.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="openModal(1)"
+        />
+        <img
+          src="yoga.jpg "
+          alt="Image 3"
+          class="thumbnail"
+          onclick="openModal(2)"
+        />
+        <img
+          src="pexels-valeriya-842571.jpg "
+          alt="Image 4"
+          class="thumbnail"
+          onclick="openModal(3)"
+        />
+        <img
+          src="pexels-xmtnguyen-699953.jpg"
+          alt="Image 5"
+          class="thumbnail"
+          onclick="openModal(4)"
+        />
+        <img
+          src="yoga.jpg"
+          alt="Image 6"
+          class="thumbnail"
+          onclick="openModal(5)"
+        />
+        <img
+          src="pexels-ella-olsson-572949-1640774.jpg "
+          alt="Image 7"
+          class="thumbnail"
+          onclick="openModal(6)"
+        />
+        <img
+          src="pexels-mirsad-mujanovic-215929-691031.jpg "
+          alt="Image 8"
+          class="thumbnail"
+          onclick="openModal(7)"
+        />
+        <img
+          src=" yoga.jpg"
+          alt="Image 9"
+          class="thumbnail"
+          onclick="openModal(8)"
+        />
+        <img
+          src="pexels-cottonbro-6555017.jpg "
+          alt="Image 10"
+          class="thumbnail"
+          onclick="openModal(9)"
+        />
+        <img
+          src="pexels-valeriya-842571.jpg "
+          alt="Image 11"
+          class="thumbnail"
+          onclick="openModal(10)"
+        />
+        <img
+          src=" pexels-xmtnguyen-699953.jpg"
+          alt="Image 12"
+          class="thumbnail"
+          onclick="openModal(11)"
+        />
+        <img
+          src=" pexels-ella-olsson-572949-1640774.jpg "
+          alt="Image 13"
+          class="thumbnail"
+          onclick="openModal(12)"
+        />
+        <img
+          src="pexels-cottonbro-6555017.jpg "
+          alt="Image 14"
+          class="thumbnail"
+          onclick="openModal(13)"
+        />
+        <img
+          src="yoga.jpg"
+          alt="Image 15"
+          class="thumbnail"
+          onclick="openModal(14)"
+        />
+        <img
+          src="pexels-mirsad-mujanovic-215929-691031.jpg "
+          alt="Image 16"
+          class="thumbnail"
+          onclick="openModal(15)"
+        />
+        <img
+          src=" pexels-xmtnguyen-699953.jpg"
+          alt="Image 17"
+          class="thumbnail"
+          onclick="openModal(16)"
+        />
+        <img
+          src="pexels-cottonbro-6555017.jpg "
+          alt="Image 18"
+          class="thumbnail"
+          onclick="openModal(17)"
+        />
+        <img
+          src=" yoga.jpg"
+          alt="Image 19"
+          class="thumbnail"
+          onclick="openModal(18)"
+        />
+        <img
+          src="pexels-mirsad-mujanovic-215929-691031.jpg "
+          alt="Image 20"
+          class="thumbnail"
+          onclick="openModal(19)"
+        />
+      </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img
+        class="modal-content"
+        id="modal-img"
+        alt="Large view of selected image"
+      />
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+    <section id="home" class="gallery-container">
+      <div id="gallery" class="thumbnails">
+        <!-- Thumbnails here -->
+      </div>
+      <button id="loadMoreBtn" class="load-more-btn">Load More</button>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section id="join" class="join-section">
+      <h2>Join Us</h2>
+      <p>Subscribe to our newsletter for the latest updates!</p>
+      <form>
+        <input type="email" placeholder="Your Email" required />
+        <button type="submit">Join</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Photo Gallery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
